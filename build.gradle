@@ -1,0 +1,27 @@
+def retrofitVersion = "2.5.0"
+def rxjava_version = '2.2.7'
+def rxandroid_version = '2.1.1'
+def lifecycle_version = "1.1.1"
+def gson_version = "2.8.5"
+
+// ViewModel and LiveData
+implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+
+// Convert Observable to LiveData
+implementation "android.arch.lifecycle:reactivestreams:$lifecycle_version"
+
+// Retrofit
+implementation "com.squareup.retrofit2:retrofit:$retrofitVersion"
+implementation "com.squareup.retrofit2:converter-gson:$retrofitVersion"
+
+// RxJava
+implementation "io.reactivex.rxjava2:rxjava:$rxjava_version"
+
+// RxAndroid
+implementation "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+// RxJava Call Adapter (Call object to Observable)
+implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofitVersion"
+
+// Gson [Usage in APIResponseObject]
+implementation "com.google.code.gson:gson:$gson_version"
